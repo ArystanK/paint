@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <kz.arctan.paint.PaintView
+            android:id="@+id/paintView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <Button
+            android:id="@+id/pickColor"
+            android:layout_margin="20dp"
+            android:background="#000000"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/button_minus"
+            android:id="@+id/buttonMinus"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:text="@string/def_brush_size"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/paintSizeView"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/button_plus"
+            android:id="@+id/buttonPlus"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:layout_marginStart="5dp"
+            android:background="@drawable/eraser"
+            android:id="@+id/eraser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp" />
+
+        <Button
+            android:layout_marginStart="5dp"
+            android:background="@drawable/refresh_button"
+            android:id="@+id/clearAll"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>
